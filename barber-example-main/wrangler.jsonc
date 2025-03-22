@@ -1,0 +1,33 @@
+{
+  "name": "barber-example",
+  "main": ".svelte-kit/cloudflare/_worker.js",
+  "minify": true,
+  "compatibility_date": "2025-02-24",
+  "compatibility_flags": [
+    "nodejs_compat"
+  ],
+  "routes": [
+    {
+      "pattern": "barber.jubati.ch",
+      "custom_domain": true,
+    },
+  ],
+  "placement": {
+    "mode": "smart"
+  },
+  "assets": {
+    "binding": "ASSETS",
+    "directory": ".svelte-kit/cloudflare"
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "barber-example",
+      "database_id": "6b3075ea-c92d-4dba-8ff2-8e0394c87050",
+      "migrations_dir": "drizzle"
+    }
+  ],
+  "observability": {
+    "enabled": true
+  },
+}
